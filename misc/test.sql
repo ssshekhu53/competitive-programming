@@ -1,0 +1,1 @@
+select employee_id, employee_name from employee where exp_in_months<(select avg(exp_in_months) from employee) and monthly_salary<(select avg(monthly_salary) from employee);
